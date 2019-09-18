@@ -6,6 +6,6 @@ python:
 os: linux
 
 install:
-  - sudo pip3 install matplotlib
+  - pip3 install -r requirements.txt
 
-script: sudo python3 test.py
+script: python3 test.py

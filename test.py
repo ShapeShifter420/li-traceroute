@@ -68,31 +68,30 @@ class Test_makegraf(TestCase):
         t.get_graf(r_data)
 
 
-class Test_Just(TestCase):
-    def test_yandex30(self):
-        addr = socket.gethostbyname('yandex.ru')
-        udp.get_route(addr, 30, 33434)
+#class Test_Just(TestCase):
+    #def test_yandex30(self):
+        #addr = socket.gethostbyname('yandex.ru')
+        #udp.get_route(addr, 30, 33434)
 
-    def test_yandex1(self):
-        addr = socket.gethostbyname('yandex.ru')
-        udp.get_route(addr, 1, 33434)
+    #def test_yandex1(self):
+        #addr = socket.gethostbyname('yandex.ru')
+        #udp.get_route(addr, 1, 33434)
 
-    def test_wikipedia(self):
-        addr = socket.gethostbyname('ru.wikipedia.org')
-        udp.get_route(addr, 30, 33434)
+    #def test_wikipedia(self):
+        #addr = socket.gethostbyname('ru.wikipedia.org')
+        #udp.get_route(addr, 30, 33434)
 
-    def test_i_yandex30(self):
-        addr = socket.gethostbyname('yandex.ru')
-        icmp.get_route(addr, 30, 33434)
+    #def test_i_yandex30(self):
+        #addr = socket.gethostbyname('yandex.ru')
+        #icmp.get_route(addr, 30, 33434)
 
-    def test_i_yandex1(self):
-        addr = socket.gethostbyname('yandex.ru')
-        icmp.get_route(addr, 1, 33434)
+    #def test_i_yandex1(self):
+        #addr = socket.gethostbyname('yandex.ru')
+        #icmp.get_route(addr, 1, 33434)
 
-    def test_i_wikipedia(self):
-        addr = socket.gethostbyname('ru.wikipedia.org')
-        icmp.get_route(addr, 30, 33434)
-
+    #def test_i_wikipedia(self):
+        #addr = socket.gethostbyname('ru.wikipedia.org')
+        #icmp.get_route(addr, 30, 33434)
 
 if __name__ == '__main__':
     unittest.main()
