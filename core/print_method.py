@@ -1,4 +1,4 @@
-from try_data import TryData
+from core.try_data import TryData
 import socket
 
 

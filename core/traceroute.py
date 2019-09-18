@@ -1,10 +1,11 @@
 import socket
 import matplotlib.pyplot as plt
 import matplotlib
-import udp_trace
-import icmp_trace
+import core.udp_trace as udp_trace
+import sys
+import core.icmp_trace as icmp_trace
 import argparse
-from try_data import TryData
+from core.try_data import TryData
 
 TRACE_METHOD = udp_trace.get_route
 STANDART_DPI = 80
@@ -21,6 +22,9 @@ def main():
     parser.add_argument('-p', '--base_port',
                         default='33434', help='give base port')
     namespaces = parser.parse_args()
+    if sys.platform == 'win32':
+        print('work on this platform is not supported')
+        exit(0)
     if not check_correct(namespaces):
         print('Please use correct input')
         exit(0)

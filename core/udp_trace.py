@@ -1,9 +1,8 @@
-import socket
 import time
 import select
-from try_data import TryData
-from print_method import print_data
-from socket_maker import *
+from core.try_data import TryData
+from core.print_method import print_data
+from core.socket_maker import *
 
 BASE_TRY_NUM = 3
 DEFAULT_COUNT_BYTE = 1024
